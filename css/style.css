@@ -306,6 +306,15 @@ footer {
     #logo{
         width: 50%;
         height: auto;
+        justify-items: center;
+    }
+
+    #menu {
+        justify-content: flex-start;
+    }
+
+    #menu li:first-child {
+        margin-right: auto;
     }
 
     #color_sea{
@@ -332,5 +341,24 @@ footer {
         position:absolute;
         top:70%;
         left:5%;
+    }
+
+    #announcement {
+        font-size: 4vw;
+    }
+
+    .container {
+        margin: 5% 0%;
+        width: 90%;
+    }
+
+    .item a, .date{
+        font-size: 2.6vw;
+    }
+
+    .more{
+        width: 50%;
+        height: auto;
+        align-self:flex-end;
     }
 }
