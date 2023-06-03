@@ -109,8 +109,14 @@ nav ul li a:hover{
 .item {
     border: none;
     text-align: left;
-    padding:5px 0px 3px 0px;
+    margin: 1.1% 0% 0.7% 0%;
 }
+
+.circle {
+    justify-self: left;
+    align-self: center;
+}
+
 .rect{
     align-self: end;
     justify-self:center;
@@ -118,8 +124,9 @@ nav ul li a:hover{
 .date{
     justify-self: flex-end;
     text-align:justify;
-    font-weight:190px;
+    font-weight:400;
     color: rgb(128, 128, 128);
+    align-self:center;
 }
 #announcement{
     font-size:1.35vw;
@@ -131,6 +138,11 @@ nav ul li a:hover{
     text-decoration: none;
     font-size: 0.8vw;
     color:black;
+}
+
+.item a:hover{
+    text-decoration: underline;
+    color:rgb(210, 16, 9);
 }
 
 /* more button */
@@ -147,8 +159,9 @@ nav ul li a:hover{
 }
 .line {
     grid-column: 1/4;
-    width: 86%;
+    width: 85%;
     border-top:dashed 1px;
+    border-top:dashed 0.08vw;
     color: rgba(199, 199, 199, 0.683);
 }
 .big_container {
@@ -166,7 +179,7 @@ footer {
     position: relative;
     bottom:0px;
     background: rgb(56, 56, 56);
-    margin-top: 15px;
+    margin-top: 1vw;
     clear: both;
 }
 #bottom_list{
@@ -196,7 +209,7 @@ footer {
     justify-content:left;
 }
 .bottom_list1 li{
-    margin: 0px 10px 0px 0px;
+    margin: 0% 0.8% 0% 0%;
     font-size:0.85vw;
 }
 #list2 {
