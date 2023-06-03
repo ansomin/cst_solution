@@ -6,6 +6,10 @@
     background-color:rgb(210, 16, 9);
 } */
 
+#mobile_logo {
+    display: none;
+}
+
 nav ul {
     background-color:rgb(210, 16, 9);
     width: 100%;
@@ -299,18 +303,43 @@ footer {
         display: none;
     }
 
-    #navigation {
+    #header_list li {
         display: none;
+    }
+
+    #navigation {
+        background-color:rgb(210, 16, 9);
+        height: 15px;
     }
 
     #logo{
         width: 50%;
         height: auto;
-        justify-items: center;
+    }
+
+    #mobile_logo {
+        display: inline-block;
+        position:relative;
+        height: 100%;
+        width:100%;
+        margin: 2% 0% 1.5% 0%;
+    }
+
+    #mobile_logo img {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        width: 30%;
+        height: auto;
     }
 
     #menu {
-        justify-content: flex-start;
+        justify-content: center;
+        margin-left: 39%;
+        display: none;
     }
 
     #menu li:first-child {
