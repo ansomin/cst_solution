@@ -223,14 +223,41 @@ footer {
 }
 
 /* tablet view */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1100px) {
     #menu li:nth-child(3), #menu li:nth-child(5) {
         display: none;
+    }
+
+    #menu li a {
+        font-size: 1.9vw;
     }
 
     .big_container {
         flex-direction: column;
         align-items: center;
+        margin: 3% 0%;
+    }
+
+    .container {
+        margin: 3% 0%;
+        width: 80%;
+    }
+
+    #announcement {
+        font-size: 3vw;
+    }
+
+    .rect {
+        align-self: center;
+    }
+
+    .line {
+        width: 90%;
+        border-top:dashed 0.15vw;
+    }
+
+    .item a, .date{
+        font-size: 1.4vw;
     }
 
     #logo{
