@@ -10,6 +10,10 @@
     display: none;
 }
 
+#mobile_menu_button {
+    display: none;
+}
+
 #navigation ul {
     background-color:rgb(210, 16, 9);
     width: 100%;
@@ -390,4 +394,24 @@ footer {
         height: auto;
         align-self:flex-end;
     }
+
+    #mobile {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    #mobile_menu_button {
+        display: inline;
+        position: relative;
+        top: 0;
+        margin: 1.5% 3% 1.5% 0%;
+        color:rgb(102, 101, 101);
+    }
+
+    #mobile_menu_button_inv {
+        margin: 1.5% 3% 1.5% 0%;
+        visibility: hidden;
+    }
+
 }
