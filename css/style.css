@@ -482,7 +482,9 @@ footer {
     border: none;
 
     /* new */
-    padding-right: 0;
+    /* padding-right: 0; */
+    width: 10%;
+    height: auto;
   }
   
   .open_menu:hover {
