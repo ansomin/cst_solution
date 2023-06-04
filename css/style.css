@@ -6,15 +6,7 @@
     background-color:rgb(210, 16, 9);
 } */
 
-#mobile_logo {
-    display: none;
-}
-
-#mobile_menu_button {
-    display: none;
-}
-
-#mobile_menu_button_inv {
+#mobile_logo, #mobile_menu_button, #mobile_menu_button_inv {
     display: none;
 }
 
@@ -300,6 +292,14 @@ footer {
         position:absolute;
         top:62%;
         left:5%;
+    }
+
+    #cst_ {
+        font-size: 2vw;
+    }
+
+    .bottom_list1 li {
+        font-size: 1.5vw;
     }
 
     
