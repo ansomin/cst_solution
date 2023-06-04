@@ -10,7 +10,17 @@
 	<title>컬러를 제대로 아는 전문기업 - 씨에스티솔루션</title>
 </head>
 <body>
-	<script>0</script>
+	<script>
+		/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+	</script>
 	<header>
 		<div id="navigation">
 			<ul id="header_list">
@@ -29,9 +39,24 @@
 				<div id="mobile_logo">
 					<a href="https://www.cstsolution.co.kr/" id="mobile_logo_a"><img src="images/logo.png"alt="회사 로고"/></a>
 				</div>
+
 				<div id="mobile_menu_button">
-					<i class="fa fa-bars"></i>
+					
+					<button class="open_menu" onclick="openNav()"><i class="fa fa-bars"></i>
+					</button>
 				</div>
+				<div id="mySidepanel" class="sidepanel">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="https://www.cstsolution.co.kr/contents/sub1_1.asp">회사소개</a>
+					<a href="https://www.cstsolution.co.kr/contents/sub2_3.asp">솔루션 소개</a>
+					<a href="https://www.cstsolution.co.kr/product/product_list.asp?g_kind=1">제품정보</a>
+					<a href="https://www.cstsolution.co.kr/board/board_list.asp?id=news">뉴스&이슈</a>
+					<a href="https://www.cstsolution.co.kr/board/board_list.asp?id=notice">고객센터</a>
+					<hr id="side_hr">
+					<a href="https://www.cstsolution.co.kr/contents/sub1_5.asp">CONTACT</a>
+					<a href="https://www.cstsolution.co.kr/adm/">ADMIN</a>
+			</ul>
+				  </div>
 			</div>
 			<ul id="menu">
 				<li><a href="https://www.cstsolution.co.kr/"><img id="logo" src="images/logo.png"alt="회사 로고"/></a></li>

@@ -6,7 +6,7 @@
     background-color:rgb(210, 16, 9);
 } */
 
-#mobile_logo, #mobile_menu_button, #mobile_menu_button_inv {
+#mobile_logo, #mobile_menu_button, #mobile_menu_button_inv, .sidepanel{
     display: none;
 }
 
@@ -166,7 +166,6 @@
 .line {
     grid-column: 1/4;
     width: 85%;
-    border-top:dashed 1px;
     border-top:dashed 0.08vw;
     color: rgba(199, 199, 199, 0.683);
 }
@@ -431,5 +430,65 @@ footer {
         z-index: 1000;
         background-color:rgba(255, 255, 255, 0.883);
     }
+    /* The sidepanel menu */
+.sidepanel {
+    display: inline;
+    height: auto; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0%;
+    background-color: rgba(188, 38, 33, 0.94); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 5% 5%;
+    text-decoration: none;
+    font-size: 5vw;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidepanel a:last-child{
+    padding-bottom:10%;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color:black;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    font-size: 8vw;
+    /* margin-left: 10%; */
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .open_menu , #mobile_menu_button_inv {
+    font-size: 4vw;
+    color:rgb(102, 101, 101);
+    background-color: rgba(255, 255, 255, 0.883);
+    cursor: pointer;
+    border: none;
+  }
+  
+  .open_menu:hover {
+    color:rgb(210, 16, 9);
+  }
+  #side_hr{
+    width:80%;
+    margin:5% 5%;
+    border-top: solid 0.5vw white;
+  }
 
 }
