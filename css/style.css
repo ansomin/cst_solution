@@ -14,6 +14,10 @@
     display: none;
 }
 
+#mobile_menu_button_inv {
+    display: none;
+}
+
 #navigation ul {
     background-color:rgb(210, 16, 9);
     width: 100%;
@@ -410,6 +414,7 @@ footer {
     }
 
     #mobile_menu_button_inv {
+        display: inline;
         margin: 1.5% 3% 1.5% 0%;
         visibility: hidden;
     }
