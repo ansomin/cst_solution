@@ -17,6 +17,7 @@
     flex-direction: row;
     justify-content: right;
     justify-items: right;
+    padding-left: 1%;
 }
 #navigation ul li {
     margin: 0.7% 1% 0.7% 0%;
