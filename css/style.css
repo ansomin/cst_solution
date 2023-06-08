@@ -117,7 +117,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 }
 
 #description li:last-child {
-    font-size:1em;
+    font-size:1.1em;
     line-height:1.5;
     line-height: 150%;
     font-weight:390;
@@ -125,11 +125,11 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 
 
 #color_sea{
-    font-size:1.8em;
+    font-size:2.5em;
     font-weight:lighter;
     position:absolute;
-    top:33%;
-    left:80%;
+    top:40%;
+    left:75%;
     
 }
 
@@ -373,7 +373,7 @@ footer {
     #mobile_description {
         display: inline-block;
         position:absolute;
-        top:55%;
+        top:50%;
         left:5%;
     }
 
@@ -556,6 +556,22 @@ footer {
 		}
 	
 		/*********************** 추가ㆍ수정 ***********************/
+
+    #mobile_description {
+        top:45%;
+    }
+
+    #mobile_description li:first-child {
+        font-size:1.8em;
+        font-weight:lighter;
+    }
+
+    #mobile_description li:last-child {
+        font-size:0.8em;
+        line-height:1.5;
+        line-height: 150%;
+        font-weight:390;
+    }
 
     #color_sea{
         font-size: 1.5em;
