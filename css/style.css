@@ -11,7 +11,7 @@ html, body {
 }
 /************************* 추가 **************************/
 
-#mobile_logo, #mobile_menu_button, #mobile_menu_button_inv, .sidepanel{
+#mobile_logo, #mobile_menu_button, #mobile_menu_button_inv, .sidepanel, #mobile_description{
     display: none;
 }
 
@@ -104,6 +104,26 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     position:relative;
     display:flex;
 }
+
+#description {
+    position:absolute;
+    top:55%;
+    left:5%;
+}
+
+#description li:first-child {
+    font-size:2.7em;
+    font-weight:345;
+}
+
+#description li:last-child {
+    font-size:1em;
+    line-height:1.5;
+    line-height: 150%;
+    font-weight:390;
+}
+
+
 #color_sea{
     font-size:1.8em;
     font-weight:lighter;
@@ -112,7 +132,8 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     left:80%;
     
 }
-#new_future{
+
+/* #new_future{
     font-size:2.7em;
     position:absolute;
     top:60%;
@@ -127,7 +148,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     position:absolute;
     top:75%;
     left:5%;
-}
+} */
 
 
 
@@ -345,6 +366,29 @@ footer {
         }
 		*/
 
+    #description, #color_sea {
+        display: none;
+    }
+
+    #mobile_description {
+        display: inline-block;
+        position:absolute;
+        top:55%;
+        left:5%;
+    }
+
+    #mobile_description li:first-child {
+        font-size:2.2em;
+        font-weight:lighter;
+    }
+
+    #mobile_description li:last-child {
+        font-size:1.0em;
+        line-height:1.5;
+        line-height: 150%;
+        font-weight:390;
+    }
+
     
     .big_container {
         flex-direction: column;
@@ -381,7 +425,7 @@ footer {
     #logo{
         width: 90%;
         height: auto;
-    } */
+    }
 
     #color_sea{
         font-size:2.0em;
@@ -406,7 +450,7 @@ footer {
         position:absolute;
         top:62%;
         left:5%;
-    }
+    } */
 
     #cst_ {
         font-size: 1.1em;
@@ -492,15 +536,15 @@ footer {
 		*/
 
 		/*********************** 추가ㆍ수정 ***********************/
-		ul#menu li:first-child {
-				display:none;
+	ul#menu li:first-child {
+		display:none;
     }
 				
-		ul#menu li:nth-child(2) {
-       position:relative;
-			 display:block;
-			 font-size:0.9em;
-			 padding:10px 0;
+	ul#menu li:nth-child(2) {
+        position:relative;
+		display:block;
+		font-size:0.9em;
+		padding:10px 0;
     }
 		
 		ul#menu li:nth-child(7) {
@@ -602,8 +646,7 @@ footer {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     /*transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-    
-  }
+    }
   
   /* The sidepanel links */
 
