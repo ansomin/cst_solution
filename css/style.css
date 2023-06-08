@@ -565,7 +565,7 @@ footer {
 		/*********************** 추가ㆍ수정 ***********************/
 
     #mobile_description {
-        top:50%;
+        top:45%;
     }
 
     #mobile_description li:first-child {
@@ -580,13 +580,12 @@ footer {
         font-weight:390;
     }
 
-    #color_sea{
+    /* #color_sea{
         font-size: 1.5em;
         font-weight:lighter;
         position:absolute;
         top:50%;
         left:5%;
-        /* display: none; */
     }
     #new_future{
         font-size:3.8em;
@@ -604,7 +603,7 @@ footer {
         position:absolute;
         top:70%;
         left:5%;
-    }
+    } */
 
     /* #announcement1, #announcement2, #announcement3 {
         font-size: 4vw;
