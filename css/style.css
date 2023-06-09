@@ -647,7 +647,7 @@ footer {
     }
     
     .bottom_list1 li {
-        font-size: 1.5vw;
+        font-size: 0.4em;
     }
 
     header {
@@ -725,7 +725,7 @@ footer {
   
   /* Style the button that is used to open the sidepanel */
   .open_menu , #mobile_menu_button_inv {
-    font-size: 4vw;
+    font-size: 1.3em;
     color:rgb(102, 101, 101);
     background-color: rgba(255, 255, 255, 0);
     cursor: pointer;
@@ -734,11 +734,6 @@ footer {
   
   .open_menu:hover {
     color:rgb(210, 16, 9);
-  }
-  #side_hr{
-    width:80%;
-    margin:5% 5%;
-    border-top: solid 0.5vw white;
   }
 
 }
