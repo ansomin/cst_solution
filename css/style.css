@@ -5,7 +5,7 @@ html, body {
 	margin:0 auto;
 	font-family:'NanumSquare', '맑은 고딕';
 	font-size:13px;
-	background:#ffffff;
+	background:rgba(255, 255, 255, 0.5);
 	height:100%;
 	font-weight:400;
     max-width:1920px;
@@ -200,6 +200,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 
 .big_container {
     display: flex;
+    background:#ffffff;
     width: 100%;
     border: none;
     justify-content: center;
