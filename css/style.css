@@ -221,6 +221,7 @@ footer {
 
 #blacklogo{
     padding-top: 65px;
+    padding-right: 65px;
     float:right;
     height: auto;
 }
@@ -361,8 +362,6 @@ footer {
         display: none;
     }
 }
-
-
 
 @media screen and (max-width: 800px) {
     #menu {
@@ -602,5 +601,5 @@ footer {
     .open_menu:hover {
         color:rgb(210, 16, 9);
     }
-    
+
 }
