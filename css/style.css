@@ -1,6 +1,6 @@
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
 
-/************************* 추가 **************************/
+
 html, body {
 	margin:0 auto;
 	font-family:'NanumSquare', '맑은 고딕';
@@ -8,8 +8,8 @@ html, body {
 	background:#ffffff;
 	height:100%;
 	font-weight:400;
+    max-width:1920px;
 }
-/************************* 추가 **************************/
 
 #mobile_logo, #mobile_menu_button, #mobile_menu_button_inv, .sidepanel, #mobile_description{
     display: none;
@@ -28,10 +28,7 @@ html, body {
     margin: 0.7% 1% 0.7% 0%;
     font-size: 0.7em;
     color:white;
-		/************************* 추가 **************************/
-        /* 수평정렬을 위한 줄높이값 고정  */
 		line-height:13px;
-		/************************* 추가 **************************/
 }
 #navigation ul li a{
     color:white;
@@ -56,25 +53,20 @@ html, body {
     justify-content:flex-end;
     column-gap:3%;   
     align-items: center;
-		/************************* 추가 **************************/
-
-		position: relative;
-		right:30px;
-		color:#555;
-		margin-left:15px;
-		
-		/************************* 추가 **************************/
+    position: relative;
+    right:30px;
+    color:#555;
+    margin-left:15px;
 }
 
-/************************* 추가 **************************/
 ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 	display:none;
 }
 
 #menu li {
-	line-height:15px;	/* 수평정렬을 위한 줄높이값 고정 */
+	line-height:15px;	
 }
-/************************* 추가 **************************/
+
 
 #menu li:first-child {
     margin-right: auto;
@@ -85,11 +77,12 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     text-decoration:none;
     font-weight:800;
     font-size:1.5em;
-    /* font-size: 120%; */
 }
+
 #menu li:last-child {
     margin: 0% 3% 0% 0%;
 }
+
 #menu li a:hover{
     color:rgb(210, 16, 9);
 }
@@ -98,7 +91,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     width: 100%;
 }
 
-#main{
+#main {
     clear:both;
     width: 100%; height: 100%;
     position:relative;
@@ -123,37 +116,15 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     font-weight:390;
 }
 
-
-#color_sea{
+#color_sea {
     font-size:2.5em;
     font-weight:lighter;
     position:absolute;
     top:33%;
     left:80%;
-    
 }
 
-/* #new_future{
-    font-size:2.7em;
-    position:absolute;
-    top:60%;
-    left:5%;
-    font-weight:345;
-}
-#various_solutions{
-    font-size:1em;
-    line-height:1.5;
-    line-height: 150%;
-    font-weight:390;
-    position:absolute;
-    top:75%;
-    left:5%;
-} */
-
-
-
-/************************* 추가 **************************/
-.article	{
+.article {
 	display:inline-grid;
 	width:27%;
 }
@@ -216,85 +187,16 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 	color:black;
 }
 
-.article ul a:hover{
+.article ul a:hover {
 	text-decoration: underline;
 	color:rgb(210, 16, 9);
 }
-/************************* 추가 **************************/
 
 .article ul li:last-child {
     color: rgb(128, 128, 128);
     font-size: 1.0em;
 }
 
-
-
-/* .container {
-    display: inline-grid;
-    width: 27%;
-    border: none;
-    font-size:0.8vw;
-    grid-template-columns: 0.2fr 7fr 2fr;
-}
-
-.item {
-    border: none;
-    text-align: left;
-    margin: 1.1% 0% 0.7% 0%;
-}
-
-.circle {
-    justify-self: left;
-    align-self: center;
-}
-
-.rect{
-    align-self: end;
-    justify-self:center;
-}
-.date{
-    justify-self: flex-end;
-    text-align:justify;
-    font-weight:400;
-    color: rgb(128, 128, 128);
-    align-self:center;
-}
-#announcement1, #announcement2, #announcement3 {
-    font-size:1.35vw;
-    font-weight: 800;
-    color:rgb(60, 60, 61);
-}
-
-.item a{
-    text-decoration: none;
-    font-size: 0.8vw;
-    color:black;
-}
-
-.item a:hover{
-    text-decoration: underline;
-    color:rgb(210, 16, 9);
-}
-
-.more{
-    justify-self:flex-end;
-    align-self:center;
-}
-
-#line1, #line2, #line3{
-    grid-column: 1/4;
-    width:100%;
-    border-top:solid;
-    color: rgba(199, 199, 199, 0.683);
-
-} 
-
-.line {
-    grid-column: 1/4;
-    width: 85%;
-    border-top:dashed 0.08vw;
-    color: rgba(199, 199, 199, 0.683);
-} */
 
 .big_container {
     display: flex;
@@ -314,38 +216,12 @@ footer {
     background: rgb(56, 56, 56);
     margin-top: 1.0em;
     clear: both;
+		min-height:180px;
 }
 
-/*
-footer{
-  width:100%;
-  background:#000000;
-  text-align:center;
-  color: #FFFFFF;
-  min-height: 75px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-
-  position:absolute;
-   bottom:0;
-   width:100%;
-   height:100px;
-}
-*/
-
-
-#bottom_list{
-    margin: 0% 8%;
-    font-size: 100%;
-    color:white;
-    text-align:left;
-
-}
 #blacklogo{
-    padding:3% 3% 0% 0%;
+    padding-top: 65px;
     float:right;
-    width: 15%;
     height: auto;
 }
 
@@ -355,72 +231,62 @@ footer{
     padding-bottom:1%;
     font-size:1.5em;
 } 
-.bottom_list1{
-    display:flex;
-    flex-direction:row;
-    justify-content:left;
-}
-.bottom_list1 li{
-    margin: 0% 0.8% 0% 0%;
-    font-size:0.85em;
-    overflow-wrap: break-word;
-}
+
 #list2 {
     gap: 1%;
 }
 
-#copyright{
+#copyright {
     padding-top:1%;
     padding-bottom:2%;
     font-size:0.8em;
 }
 
-#testing {
+#info {
     display: block;
+    width:100%;
+    min-height:180px;
     padding: 30px 0px 30px 30px;
     color: white;
 }
 
-#testing li:not(:first-child) {
-    font-size: 1.2em;
+#info ul {
+	width:750px;
+	height:20px;
+	line-height:20px;
 }
 
-#testing li:first-child {
+#info ul li {
+	display:inline-block;
+	height:20px;
+	line-height:20px;
+	margin:3px 0;
+}
+
+#info ul li:not(:first-child) {
+    font-size: 1.1em;
+}
+
+#info ul li:first-child {
+	display:block;		
     font-weight:800;
-    /* padding-top:2%; */
     padding-bottom:1%;
     font-size:1.7em;
+	height:30px !important;
+	line-height:30px !important;
 }
 
-#testing li:nth-child(2), #testing li:nth-child(3), #testing li:nth-child(4) {
-    display: inline-block;
+#info ul li:nth-child(3):before, #info ul li:nth-child(4):before,
+#info ul li:nth-child(6):before, #info ul li:nth-child(7):before {
+	content : "|";
+	color:#fff;
+	margin:0 12px;
 }
 
-#testing li:nth-child(2), #testing li:nth-child(3) {
-    border-right: 1px solid white;
-    padding-right: 20px;
-}
-
-#testing li:nth-child(3), #testing li:nth-child(4) {
-    padding-left: 20px;
-}
-
-/* #testing li:not(:first-child) {
-    margin: 7px 0px;
-} */
-
-#testing li:nth-child(5) {
-    display: block;
-}
-
-#testing li:nth-child(6), #testing li:nth-child(7), #testing li:nth-child(8) {
-    display: inline-block;
-    padding-right: 20px;
-}
-
-#testing li:last-child {
+#info ul li:last-child {
+		display: block;		
     margin-top: 15px;
-    font-size: 0.8em;
+    font-size: 0.95em; 
 }
 
 @media screen and (max-width: 1270px) {
@@ -434,43 +300,15 @@ footer{
     .big_container div {
         margin: 40px 0%;
     }
-
-    /************************* 추가 **************************/
-	.article	{
+  
+	.article {
 		display:inline-grid;
 		width:90%;
 	}
-	
-	/* #menu {
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-    column-gap:3%;   
-    align-items: center;
-		position: relative;
-		color:#555;
-	}
-	
-	ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
-		display:none;
-	} */
-	/************************* 추가 **************************/
 }
-
 
 /* tablet view */
 @media screen and (max-width: 1100px) {
-    
-        /* 		
-		자문 : 왜 메뉴를 사라진게 한건지???
-			└ 가로폭중에서 메뉴가 차지하는 비율이 크진 않아서 숨기는거보다 메뉴간격을 줄이거나 글자사이즈를 살짝 조절하는게 좋을 듯
-		
-		#menu li:nth-child(3), #menu li:nth-child(5) {
-        display: none;
-        }
-		*/
-
     #description, #color_sea {
         display: none;
     }
@@ -494,70 +332,11 @@ footer{
         font-weight:390;
     }
 
-
-    /* .container {
-        margin: 3% 0%;
-        width: 80%;
-    }
-
-    #announcement1, #announcement2, #announcement3 {
-        font-size: 3vw;
-    } 
-
-    .rect {
-        align-self: center;
-    }
-
-    .line {
-        width: 90%;
-        border-top:dashed 0.15vw;
-    }
-
-    .item a, .date{
-        font-size: 1.4vw;
-    }
-
-    #logo{
-        width: 90%;
-        height: auto;
-    }
-
-    #color_sea{
-        font-size:2.0em;
-        font-weight:lighter;
-        position:absolute;
-        top:45%;
-        left:5%;
-    }
-    #new_future{
-        font-size:3.6vw;
-        position:absolute;
-        top:40%;
-        left:5%;
-        font-weight:345;
-        display: none;
-    }
-    #various_solutions{
-        font-size:1.0em;
-        line-height:1.5;
-        line-height: 150%;
-        font-weight:390;
-        position:absolute;
-        top:62%;
-        left:5%;
-    } */
-
     #cst_ {
         font-size: 1.1em;
     }
-
-    .bottom_list1 li {
-        font-size: 0.6em;
-    }
 		
-		
-	/************************* 추가 **************************/
-	.article	{
+	.article {
 		display:inline-grid;
 		width:90%;
 	}
@@ -570,55 +349,90 @@ footer{
     column-gap:3%;   
     align-items: center;
 		position: relative;
-		/* padding-left:15px; */
-		/* right:20px; */
 		color:#555;
 	}
-	
+  
 	ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 		display:none;
 	}
-	/************************* 추가 **************************/
 
-    #blacklogo{
+    #blacklogo {
         padding:4.5% 3% 0% 0%;
         display: none;
     }
-
 }
+
+
 
 @media screen and (max-width: 800px) {
-    #testing li:nth-child(3) {
-        border-right: 0;
+    #menu {
+        font-size:0.7em;
     }
-
-    #testing li:nth-child(4), #testing li:nth-child(8) {
-        display: block;
-        padding-left: 0px;
-        padding-top: 10px;
+    #logo {
+        max-width: 150px;
     }
+    
+	#info {
+  		min-height:200px;
+	}
+		
+	#info ul {
+		width:600px;
+	}
 
+	#info ul li:nth-child(4):before, #info ul li:nth-child(7):before {
+		content : "";
+		margin:0;
+	}
+	
+	#info ul li:nth-child(5):before {
+		content : "|";
+		color:#fff;
+		margin:0 12px;
+	}
 }
 
-@media screen and (max-width: 550px) {
-    #testing li:nth-child(3) {
-        display: block;
-        padding-left: 0px;
-        padding-top: 10px;
-    }
 
-    #testing li:nth-child(2) {
-        border-right: 0;
-        margin-top: 5px;
-    }
+@media screen and (max-width: 650px) {
+	#info ul {
+		width:480px;
+	}
+
+	#info ul li:nth-child(4):before, #info ul li:nth-child(6):before {
+		content : "";
+		margin:0;
+	}
+	
+	#info ul li:nth-child(7):before {
+		content : "|";
+		color:#fff;
+		margin:0 12px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	#info {
+  		min-height:220px;
+	}
+	
+	#info ul {
+		width:400px;
+	}
+	
+	#info ul li:nth-child(3):before, #info ul li:nth-child(5):before, #info ul li:nth-child(7):before {
+		content : "";
+		margin:0;
+	}
+	
+	#info ul li:nth-child(4):before, #info ul li:nth-child(6):before {
+		content : "|";
+		color:#fff;
+		margin:0 12px;
+	}
 }
 
 /* mobile view */
 @media screen and (max-width: 500px) {
-    /* #menu li:not(:first-child) {
-        display: none;
-    } */
-
     #header_list li {
         display: none;
     }
@@ -652,15 +466,6 @@ footer{
         height: auto;
     }
 
-    /*
-		#menu {
-        justify-content: center;
-        margin-left: 39%;
-        display: none;
-    }
-		*/
-
-		/*********************** 추가ㆍ수정 ***********************/
 	ul#menu li:first-child {
 		display:none;
     }
@@ -672,16 +477,14 @@ footer{
 		padding:10px 0;
     }
 		
-		ul#menu li:nth-child(7) {
-			border-bottom:dashed 1px rgba(255, 255, 255, 0.5);
-		}
-		
-		ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
-			display:block;
-		}
+    ul#menu li:nth-child(7) {
+        border-bottom:dashed 1px rgba(255, 255, 255, 0.5);
+    }
+    
+    ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
+        display:block;
+    }
 	
-		/*********************** 추가ㆍ수정 ***********************/
-
     #mobile_description {
         top:40%;
     }
@@ -697,50 +500,6 @@ footer{
         line-height: 150%;
         font-weight:390;
     }
-
-    /* #color_sea{
-        font-size: 1.5em;
-        font-weight:lighter;
-        position:absolute;
-        top:50%;
-        left:5%;
-    }
-    #new_future{
-        font-size:3.8em;
-        position:absolute;
-        top:60%;
-        left:5%;
-        font-weight:345;
-        display: none;
-    }
-    #various_solutions{
-        font-size:0.7em;
-        line-height:1.5;
-        line-height: 150%;
-        font-weight:390;
-        position:absolute;
-        top:70%;
-        left:5%;
-    } */
-
-    /* #announcement1, #announcement2, #announcement3 {
-        font-size: 4vw;
-    }
-
-    .container {
-        margin: 5% 0%;
-        width: 90%;
-    }
-
-    .item a, .date{
-        font-size: 2.6vw;
-    }
-
-    .more{
-        width: 50%;
-        height: auto;
-        align-self:flex-end;
-    } */
 
     #mobile {
         display: flex;
@@ -762,10 +521,6 @@ footer{
         visibility: hidden;
     }
     
-    .bottom_list1 li {
-        font-size: 0.4em;
-    }
-
     header {
         position: sticky;
         top:0;
@@ -773,19 +528,19 @@ footer{
         background-color:rgba(255, 255, 255, 0.883);
     }
    
-	 /* The sidepanel menu */
+	/* The sidepanel menu */
 	#menu {
-    display: none;
-    height: auto; /* Specify a height */
-    width: 250px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    right: 0%;
-    background-color: rgba(188, 38, 33, 0.94); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    /*transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        display: none;
+        height: auto; /* Specify a height */
+        width: 250px; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        right: 0%;
+        background-color: rgba(188, 38, 33, 0.94); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        /*transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
     }
 
     #copyright {
@@ -796,8 +551,8 @@ footer{
         padding:4.5% 3% 0% 0%;
         display: none;
     }
-  
-  /* The sidepanel links */
+    
+    /* The sidepanel links */
 
 	ul#menu {
 		height:100%;
@@ -813,49 +568,39 @@ footer{
 	}
 	
 	ul#menu a {
-    text-decoration: none;
-    font-size: 1.25em;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
+        text-decoration: none;
+        font-size: 1.25em;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
 		line-height:1.25em;
-  }
-	/*
-  #menu a:last-child{
-    padding-bottom:10%;
-  }
-	*/
-  
-  /* When you mouse over the navigation links, change their color */
-  ul#menu a:hover {
-    color:black;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  #menu .closebtn {
-    position: absolute;
-    top: -5px;
-    right: 3%;
-    font-size: 3em;
-    /* margin-left: 10%; */
-  }
-  
-  /* Style the button that is used to open the sidepanel */
-  .open_menu , #mobile_menu_button_inv {
-    font-size: 1.3em;
-    color:rgb(102, 101, 101);
-    background-color: rgba(255, 255, 255, 0);
-    cursor: pointer;
-    border: none;
-  }
-  
-  .open_menu:hover {
-    color:rgb(210, 16, 9);
-  }
+    }
 
-}
-
-
-#bottom_list {
-    display: none;
+  
+    /* When you mouse over the navigation links, change their color */
+    ul#menu a:hover {
+        color:black;
+    }
+  
+    /* Position and style the close button (top right corner) */
+    #menu .closebtn {
+        position: absolute;
+        top: -5px;
+        right: 3%;
+        font-size: 3em;
+    }
+  
+    /* Style the button that is used to open the sidepanel */
+    .open_menu , #mobile_menu_button_inv {
+        font-size: 1.3em;
+        color:rgb(102, 101, 101);
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        border: none;
+    }
+  
+    .open_menu:hover {
+        color:rgb(210, 16, 9);
+    }
+    
 }
