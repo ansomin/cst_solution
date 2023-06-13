@@ -17,8 +17,8 @@ html, body {
 #navigation {
     width:100%;
     background-color:rgb(210, 16, 9);
-
 }
+
 #navigation ul {
     max-width: 1920px;
     display: flex;
@@ -28,8 +28,6 @@ html, body {
     padding-left: 1%;
     margin-left: auto;
     margin-right: auto;
-    
-
 }
 #navigation ul li {
     margin: 0.7% 1% 0.7% 0%;
@@ -53,13 +51,13 @@ html, body {
     height: auto;
 }
 
+/* test */
 #menubackground{
     width:100%;
-    
 }
 
 #menu {
-    max-width:1920px;
+    max-width: 1920px;
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
@@ -111,7 +109,8 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 }
 #main {
     clear:both;
-    max-width:1920px; height: 100%;
+    max-width: 1920px;
+    height: 100%;
     position:relative;
     display:flex;
     margin-left: auto;
@@ -225,7 +224,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 .big_container {
     display: flex;
     background:#ffffff;
-    max-width:1920px;
+    max-width: 1920px;
     border: none;
     justify-content: center;
     gap: 5%;
@@ -243,7 +242,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
 }
 
 footer {
-    max-width:1920px;
+    max-width: 1920px;
     position: relative;
     bottom:0;
     background: rgb(56, 56, 56);
@@ -540,6 +539,11 @@ footer {
         display: flex;
         width: 100%;
         align-items: center;
+    }
+
+    /* test */
+    #menubackground{
+        width:0%;
     }
 
     #mobile_menu_button {
