@@ -5,7 +5,7 @@ html, body {
 	margin:0 auto;
 	font-family:'NanumSquare', '맑은 고딕';
 	font-size:13px;
-	background:rgba(198, 198, 198, 0.699);
+	background:rgb(198, 198, 198);
 	height:100%;
 	font-weight:400;
 }
