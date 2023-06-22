@@ -9,6 +9,10 @@ html, body {
 	font-weight:400;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 #mobile_logo, #mobile_menu_button, #mobile_menu_button_inv, .sidepanel, #mobile_description{
     display: none;
@@ -99,7 +103,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     color:rgb(210, 16, 9);
 }
 
-#whale {
+#main_image {
     width: 100%;
 }
 
@@ -123,12 +127,12 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     left:5%;
 }
 
-#description li:first-child {
+#description li:first-child, #sub_desc_1 li:first-child {
     font-size:2.7em;
     font-weight:345;
 }
 
-#description li:last-child {
+#description li:last-child, #sub_desc_1 li:last-child {
     font-size:1.1em;
     line-height:1.5;
     line-height: 150%;
@@ -324,6 +328,114 @@ footer {
     margin-top: 15px;
     font-size: 0.95em; 
 }
+
+
+/* 서브페이지 시작 */
+
+#sub_desc_1 {
+    position:absolute;
+    top:30%;
+    left:5%;
+}
+
+#main_contents {
+    max-width: 1920px;
+}
+
+#gray_block {
+    background: rgb(229, 229, 229);
+    display: inline-block;
+    height: 35px;
+    width: 100%;
+    border-radius: 0px 0px 35px 0px;
+}
+
+#nav_route {
+    float: right;
+    padding: 7px 30px 0 0;
+    z-index: 10000;
+}
+
+#nav_route li {
+    display: inline-block;
+    margin: 0px 2px;
+}
+
+#home_icon {
+    height: 15px;
+    width: auto;
+}
+
+#sub_menu_block {
+    position: relative;
+    display: inline-block;
+}
+
+#sub_menu {
+    display: inline-block;
+}
+
+#sub_menu li {
+    padding: 15px 30px;
+    background-image: linear-gradient(white, rgb(220, 220, 220));
+    border-bottom: 1px solid rgb(200, 200, 200);
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+#sub_menu li a {
+    color: #444444;
+    font-weight: 500;
+}
+
+#sub_menu li:first-child {
+    background: rgb(212, 212, 212);
+    padding-top: 35px;
+}
+
+#sub_menu li:first-child li {
+    font-size: 1.7em;
+    font-weight: 550;
+    border: none;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#sub_menu li:first-child li:last-child {
+    background-image: none;
+    color: #777;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+}
+
+#sub_contents {
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+    max-width: 1920px;
+}
+
+#company_info {
+    color: #676767;
+    line-height: 23px;
+    display: inline-block;
+    position: absolute;
+    left: 250px;
+    top: 600px;
+    z-index: 1;
+}
+
+#printer {
+    display: inline-block;
+    position: absolute;
+    left: 670px;
+    top: 570px;
+    z-index: -1;
+}
+
+
+
+
 
 @media screen and (max-width: 1270px) {
     .big_container {
