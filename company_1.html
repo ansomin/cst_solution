@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>컬러를 제대로 아는 전문기업 - 씨에스티솔루션</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+	<script>
+		/* Set the width of the sidebar to 250px (show it) */
+		function openNav() {
+			document.getElementById("menu").style.display = "block";
+		}
+
+		/* Set the width of the sidebar to 0 (hide it) */
+		function closeNav() {
+			document.getElementById("menu").style.display = "none";
+		}
+
+
+		var width_size = window.outerWidth+17;
+
+		$(window).resize(function (){
+		if (width_size > 500) {
+			document.getElementById("menu").style.display = "flex";
+			}
+		})
+
+
+	</script>
+	<header>
+		<div id="navigation">
+			<ul id="header_list">
+				<li><a href="https://www.cstsolution.co.kr/index.asp">HOME</a></li>
+				<li>|</li>
+				<li><a href="https://www.cstsolution.co.kr/contents/sub1_5.asp">CONTACT US</a></li>
+				<li>|</li>
+				<li><a href="https://www.cstsolution.co.kr/adm/">ADMIN</a></li>
+			</ul>
+		</div>
+		<div>
+			<div id="mobile">
+				<div id="mobile_menu_button_inv">
+					<i class="fa fa-bars"></i>
+				</div>
+				<div id="mobile_logo">
+					<a href="https://www.cstsolution.co.kr/" id="mobile_logo_a"><img src="images/logo.png"alt="회사 로고"/></a>
+				</div>
+				<div id="mobile_menu_button">
+					<button class="open_menu" onclick="openNav()"><i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div id="menubackground">
+					<ul id="menu">
+						<li><a href="https://www.cstsolution.co.kr/"><img id="logo" src="images/logo.png"alt="회사 로고"/></a></li>
+						<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+						<li><a href="https://www.cstsolution.co.kr/contents/sub1_1.asp" class="active">회사소개</a></li>
+                        <li id="mobile_sub_menu">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+						<li><a href="https://www.cstsolution.co.kr/contents/sub2_3.asp">솔루션 소개</a></li>
+						<li><a href="https://www.cstsolution.co.kr/product/product_list.asp?g_kind=1">제품정보</a></li>
+						<li><a href="https://www.cstsolution.co.kr/board/board_list.asp?id=news">뉴스&이슈</a></li>
+						<li><a href="https://www.cstsolution.co.kr/board/board_list.asp?id=notice">고객센터</a></li>
+						<li><a href="https://www.cstsolution.co.kr/contents/sub1_5.asp">CONTACT</a></li>
+						<li><a href="https://www.cstsolution.co.kr/adm/">ADMIN</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="mainbackground">
+            <div id="main">
+                <img id="main_image" src="images/sub_img01.jpg" alt="열기구사진"/>
+                <ul id="sub_desc_1">
+                    <li><strong>보다 수준 높은 기술</strong>을 제공하는<br> 씨에스티솔루션이 되겠습니다.</li>
+                    <li>기술을 통해 국가와 사회, 고객발전에<br>기여하는 신뢰받는 기업이 될 것을 약속드립니다.</li>
+                </ul>
+            </div>
+		</div>
+        <div id="main_contents_background">
+            <div id="main_contents">
+                <div id="gray_block">
+                    <ul id="nav_route">
+                        <li><img id="home_icon" src="images/icon_home_b.png" alt="홈사진"></li>
+                        <li>></li>
+                        <li>회사소개</li>
+                        <li>></li>
+                        <li><strong>인사말</strong></li>
+                    </ul>
+                    <div id="sub_menu_block">
+                        <ul id="sub_menu">
+                            <li>
+                                <ul>
+                                    <li>회사소개</li>
+                                    <li>Company</li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="active">인사말</a></li>
+                            <li><a href="">회사연혁</a></li>
+                            <li><a href="">조직도</a></li>
+                            <li><a href="">주요 고객</a></li>
+                            <li><a href="">오시는 길</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="sub_contents">
+                    <p id="company_info">
+                        디지털 칼라 프린팅 시장을 선도하는 저희 CST Solution은<br>
+                        <strong>"고객과 함께 하는 가치의 실현"</strong>을 최상의 목표로 고객 여러분과 함께하는 전문회사 입니다.<br><br>
+        
+                        제품의 공급에서부터 기술력을 바탕으로 한 철저한 A/S 및 사후관리로<br>
+                        고객중심의 사무환경 개선에 이바지 하고 있으며, 고객과 늘 함께 하는<br>
+                        기업이 되고자 항상 노력해 왔습니다.<br><br>
+        
+                        오랜 사무기기 Rental전문기업의 경험을 통하여<br>
+                        새롭게 변화하는 사무환경에 적극적으로 대응하기 위한<br>
+                        다양한 솔루션을 제공하고 있으며, 빠른 환경변화에 대응하는 기업운영으로<br>
+                        CST Solution은 함께하는 고객이 가장 경쟁력이 있는 사무환경의 기업이 되도록<br>
+                        최선의 노력을 다하겠습니다.<br><br>
+        
+                        감사합니다.
+                    </p>
+                    <img id="printer" src="images/sub_img_1_01.jpg" alt="프린터사진">
+                </div>
+            </div>
+
+        </div>
+	</main>
+	<div id="footerbackground">
+	<footer>
+		<div>
+			<img id="blacklogo" src="images/blacklogo.png"alt="회사 로고"/>
+			<div id="info">
+				<ul>
+					<li>(주)씨에스티솔루션</li>
+					<li><i class="fa fa-map-marker"></i> 서울특별시 중구 신당동 432-695 신영빌딩 502호</li>
+					<li>대표이사 : 홍윤표</li>
+					<li>사업자등록번호 : 201-86-05752</li>
+					<li><i class="fa fa-phone-square"></i> 대표전화 : 1577-9709</li>
+					<li><i class="fa fa-fax"></i> 팩스 : 02-2252-0587</li>
+					<li><i class="fa fa-envelope"></i> 이메일 : colourpoint@cstsolution.co.kr</li>
+					<li>Copyright ⓒ 2008-2023 CSTSOLUTION All right reserved.</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    </div>
+</body>
+</html>

@@ -19,7 +19,7 @@ a {
 }
 
 .active {
-    color: rgb(210, 16, 9) !important;
+    color: rgb(210, 16, 9) ;
 }
 
 #navigation {
@@ -131,6 +131,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     left:5%;
 }
 
+/* 회사소개 필요한 스타일 리스트 추가 */
 #description li:first-child, #sub_desc_1 li:first-child {
     font-size:2.7em;
     font-weight:345;
@@ -142,6 +143,7 @@ ul#menu li:nth-child(2), ul#menu li:nth-child(8), ul#menu li:nth-child(9) {
     line-height: 150%;
     font-weight:390;
 }
+/* 회사소개 필요한 스타일 리스트 추가 끝 */
 
 #color_sea {
     font-size:2.5em;
@@ -334,9 +336,8 @@ footer {
     font-size: 0.95em; 
 }
 
-
+/* 회사소개 스타일 시작 */
 /* 서브페이지 시작 */
-
 #main_contents {
     max-width: 1920px;
     margin-left: auto;
@@ -359,13 +360,14 @@ footer {
 
 #nav_route {
     float: right;
-    padding: 7px 30px 0 0;
+    padding: 8px 30px 0 0;
     z-index: 10000;
 }
 
 #nav_route li {
     display: inline-block;
     margin: 0px 2px;
+    vertical-align: middle;
 }
 
 #home_icon {
@@ -453,15 +455,20 @@ footer {
     z-index: -1; */
 }
 
-
 @media screen and (max-width: 1410px) {
     #printer {
         display: block;
-        margin-left: 700px;
+        /* margin-left: 55%; */
+        float: right;
+        margin-right: 50px;
         margin-bottom: 100px;
     }
-}
 
+    #company_info {
+        margin-right: 50px;
+    }
+}
+/* 회사소개 스타일 끝 */
 
 @media screen and (max-width: 1270px) {
 
@@ -536,7 +543,17 @@ footer {
         padding:4.5% 3% 0% 0%;
         display: none;
     }
+
 }
+
+/* 회사소개 스타일 시작 */
+@media screen and (max-width: 900px) {
+    #company_info {
+        padding-left: 250px;
+    }
+
+}
+/* 회사소개 스타일 끝 */
 
 @media screen and (max-width: 800px) {
     #menu {
@@ -564,6 +581,12 @@ footer {
 		color:#fff;
 		margin:0 12px;
 	}
+
+    /* 회사소개 스타일 시작 */
+    #company_info {
+        font-size: 1.1em;
+    }
+    /* 회사소개 스타일 끝 */
 }
 
 
@@ -582,6 +605,26 @@ footer {
 		color:#fff;
 		margin:0 12px;
 	}
+
+    /* 회사소개 스타일 시작 */
+    #company_info {
+        font-size: 1.0em;
+    }
+
+    #printer {
+        width: 400px;
+        height: auto;
+    }
+
+    #sub_desc_1 li:first-child {
+        font-size:2.2em;
+    }
+
+    #sub_desc_1 li:last-child {
+        font-size:0.em;
+    }
+    /* 회사소개 스타일 끝 */
+
 }
 
 @media screen and (max-width: 530px) {
@@ -783,4 +826,35 @@ footer {
         color:rgb(210, 16, 9);
     }
 
+    /* 모바일뷰 회사소개 스타일 시작 */
+    
+    #sub_desc_1 li:first-child {
+        font-size: 1.8em;
+    }
+
+    #sub_desc_1 li:last-child {
+        font-size: 0.7em;
+    }
+
+    #sub_menu_block {
+        display: none;
+    }
+
+    #company_info {
+        padding: 0;
+        margin: 30px 50px 20px 50px;
+    }
+
+    #nav_route {
+        float: left;
+        padding: 8px 0 0 10px;
+        z-index: 10000;
+    }
+    
+    #nav_route li {
+        display: inline-block;
+        margin: 0px 2px;
+    }
+
+    /* 모바일뷰 회사소개 스타일 끝 */
 }
