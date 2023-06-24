@@ -377,11 +377,8 @@ footer {
 
 #sub_menu_block {
     float: left;
-    /* position: relative;
-    display: inline-block; */
-}
-
-#sub_menu {
+    position: relative;
+    z-index: 100;
     /* display: inline-block; */
 }
 
