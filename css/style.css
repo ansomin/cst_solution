@@ -353,14 +353,14 @@ footer {
 
 #sub_desc_2 {
     position:absolute;
-    top:10%;
+    top:30%;
     left:5%;
 }
 
 #sub_desc_3 {
     position:absolute;
     top:30%;
-    left:25%;
+    left:22%;
 }
 
 #sub_desc_4 {
@@ -372,7 +372,8 @@ footer {
 #sub_desc_5 {
     position:absolute;
     top:35%;
-    left:55%;
+    left:52%;
+    font-size: 1em;
 }
 
 #gray_block {
@@ -586,7 +587,7 @@ footer {
     margin-bottom: 30px;
 }
 
-#webpop_inst li:nth-child(n+2):nth-child(-n+4), #customercare_inst li:nth-child(n+2):nth-child(-n+4), #servicecare_inst li:nth-child(n+2):nth-child(-n+4) {
+#webpop_inst li:nth-child(n+2):nth-child(-n+4), #customercare_inst li:nth-child(n+2):nth-child(-n+4), #servicecare_inst li:nth-child(n+2):nth-child(-n+4), #designh_inst li:nth-child(n+2):nth-child(-n+4) {
     color: #333;
     line-height: 25px;
     font-size: 1.1em;
@@ -1024,6 +1025,20 @@ footer {
     #organization_chart {
         margin: 0;
     }
+
+    #forum_grid_container {
+        grid-template-columns: 50px 1px auto 1px 90px;
+    }
+
+    #forum_grid_container div:nth-child(n+5):nth-child(-n+8), .post_author, .post_views, .post_time {
+        display: none;
+    }
+
+    .post_date {
+        grid-column: 5 / 6;
+    }
+
+
 }
 /* 회사소개 스타일 끝 */
 
@@ -1069,6 +1084,12 @@ footer {
     }
 
     /* 회사소개 스타일 끝 */
+
+    #sub_desc_5 {
+        top:30%;
+        left:50%;
+        font-size: 0.8em;
+    }
 }
 
 
@@ -1110,6 +1131,10 @@ footer {
         margin-left: -50px;
     } */
     /* 회사소개 스타일 끝 */
+
+    .brand_tag {
+        display: none;
+    }
 
 }
 
@@ -1395,6 +1420,23 @@ footer {
     #no_event {
         margin-top: 30px;
     }
+
+    #forum_grid_container {
+        grid-template-columns: 30px 1px auto 1px 60px;
+        row-gap: 20px;
+    }
+
+    .post_num, .post_date {
+        font-size: 0.8em;
+    }
+
+    .post_title a {
+        font-size: 0.9em;
+    }
+
+    #search_img img {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -1404,6 +1446,21 @@ footer {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    }
+
+    #sub_desc_1 {
+        top: 20%;
+    }
+
+    #sub_desc_3 {
+        top:25%;
+        left:15%;
+    }
+
+    #sub_desc_5 {
+        top:25%;
+        left:48%;
+        font-size: 0.7em;
     }
 
     /* .article ul li {
