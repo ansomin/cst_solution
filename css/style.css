@@ -132,12 +132,12 @@ ul#menu #menu_2, ul#menu #menu_8, ul#menu #menu_9 {
 }
 
 /* 회사소개 필요한 스타일 리스트 추가 */
-#description li:first-child, #sub_desc_1 li:first-child {
+#description li:first-child, .main_desc li:first-child {
     font-size:2.7em;
     font-weight:345;
 }
 
-#description li:last-child, #sub_desc_1 li:last-child {
+#description li:last-child, .main_desc li:last-child {
     font-size:1.1em;
     line-height:1.5;
     line-height: 150%;
@@ -351,6 +351,30 @@ footer {
     left:5%;
 }
 
+#sub_desc_2 {
+    position:absolute;
+    top:10%;
+    left:5%;
+}
+
+#sub_desc_3 {
+    position:absolute;
+    top:30%;
+    left:25%;
+}
+
+#sub_desc_4 {
+    position:absolute;
+    top:15%;
+    left:8%;
+}
+
+#sub_desc_5 {
+    position:absolute;
+    top:35%;
+    left:55%;
+}
+
 #gray_block {
     background: rgb(229, 229, 229);
     display: inline-block;
@@ -416,12 +440,16 @@ footer {
     font-weight: 400;
 }
 
+
+
 #sub_contents {
     height: auto;
     min-height: 500px;
-    padding-left: 300px;
+    /* margin -> overflow, use padding */
+    padding: 50px 50px 0px 250px;
+    /* padding-left: 300px;
     padding-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; */
     width: 100%;
     /* display: inline-block; */
     /* float: right; */
@@ -506,6 +534,201 @@ footer {
 
 /* company_2.html end */
 
+/* company_4.html start */
+#primary_customers > li {
+    display: inline-block;
+    margin-right: 75px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: dashed 1px #b5b5b5;
+}
+
+#primary_customers > li > ul > li:first-child {
+    border: solid 3px rgb(229, 229, 229);
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#primary_customers > li > ul > li:last-child {
+    font-size: 0.9em;
+    text-align: center;
+    color: #555;
+}
+
+#other_cust {
+    float: right;
+    color: #009999;
+}
+
+#direction_info {
+    color: #7f7f7f;
+    line-height: 28px;
+    display: inline-block;
+    font-size: 1.1em;
+    vertical-align: top;
+    padding: 10px 0px 0px 5px;
+}
+
+/* company_4.html end */
+
+#map_help {
+    width: 450px;
+}
+
+/* solution_X.html start */
+
+#webpop_inst, #customercare_inst, #servicecare_inst, #designh_inst {
+    text-align: center;
+}
+
+#webpop_inst li, #customercare_inst li, #servicecare_inst li, #designh_inst li {
+    color: #777777;
+    margin-bottom: 30px;
+}
+
+#webpop_inst li:nth-child(n+2):nth-child(-n+4), #customercare_inst li:nth-child(n+2):nth-child(-n+4), #servicecare_inst li:nth-child(n+2):nth-child(-n+4) {
+    color: #333;
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+#webpop_inst li:nth-child(3), #webpop_inst li:nth-child(8), #webpop_inst li:nth-child(11), #webpop_inst li:nth-child(14), #webpop_inst li:nth-child(18), #webpop_inst li:nth-child(21), #customercare_inst li:nth-child(3), #servicecare_inst li:nth-child(3), #designh_inst li:nth-child(3) {
+    margin-bottom: 2px;
+}
+
+#webpop_inst li img, #customercare_inst li img, #servicecare_inst li img, #designh_inst li img {
+    border: solid 1px #CCCCCC;
+}
+
+#webpop_inst li:first-child, #customercare_inst li:first-child, #servicecare_inst li:first-child, #designh_inst li:first-child {
+    font-size: 2.5em;
+    font-weight: 800;
+    color:rgb(210, 16, 9);
+    margin-bottom: 5px;
+}
+/* solution_X.html end */
+
+/* news_X.html start */
+
+#no_event {
+    color: #777777;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* news_X.html end */
+
+/* product_X.html start */
+
+.product_list {
+    text-align: center;
+}
+
+.product_list li:not(.brand) {
+    display: inline-block;
+}
+
+.brand {
+    text-align: left;
+    background-color: #EFEFEF;
+    padding: 10px 10px 10px 20px;
+    border-top: #AAAAAA solid 3px;
+    border-bottom: #AAAAAA solid 1px;
+}
+
+.brand:not(:first-child) {
+    margin-top: 50px;
+}
+
+.brand img {
+    height: 35px;
+    width: auto;
+}
+
+.printer_item {
+    border: solid 1px #CCCCCC;
+    margin: 20px 10px 20px 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.ppm {
+    border: solid 1px #CCCCCC;
+    margin: 20px 10px 40px 20px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.printer_item ul li img {
+    width: 250px;
+    height: 248px;
+}
+
+.printer_item ul li {
+    font-weight: 600;
+    color: #444444;
+}
+
+.ppm ul li:nth-child(2) {
+    font-weight: 600;
+    color: #444444;
+}
+
+.ppm ul li:nth-child(3) {
+    display: block;
+    color: #FF3300;
+    margin-top: 5px;
+}
+
+.printer_image {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.printer_image img:first-child {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.printer_image img:last-child {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -1px;
+    left: 149px;
+}
+
+.discontinued {
+    position: absolute;
+    width: 249px;
+    height: 249px;
+    top: 0px;
+    left: 0;
+    background: rgba(190,190,190,0.8);
+}
+
+.discontinued p {
+    margin-top: 120px;
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+}
+
+.no_item {
+    margin: 100px 0px 200px 0px;
+    text-align: center;
+    color: #777777;
+    font-size: 0.9em;
+}
+
+
+/* product_X.html end */
 
 @media screen and (max-width: 1410px) {
     #printer {
@@ -517,6 +740,10 @@ footer {
 
     #company_info {
         margin-right: 50px;
+    }
+
+    #primary_customers > li {
+        margin-right: 100px;
     }
 }
 /* 회사소개 스타일 끝 */
@@ -539,6 +766,11 @@ footer {
 		width: 90%;
 	}
 
+    #primary_customers > li {
+        margin-left: 50px;
+        margin-right: 50px;
+        /* margin-right: 125px; */
+    }
 }
 
 /* tablet view */
@@ -597,6 +829,12 @@ footer {
 
     #comp_years {
         margin-left: 50px;
+    }
+
+    #primary_customers > li {
+        margin-left: 50px;
+        margin-right: 25px;
+        /* margin-right: 125px; */
     }
 }
 
@@ -687,11 +925,11 @@ footer {
         height: auto;
     }
 
-    #sub_desc_1 li:first-child {
+    .main_desc li:first-child {
         font-size:2.2em;
     }
 
-    #sub_desc_1 li:last-child {
+    .main_desc li:last-child {
         font-size:0.em;
     }
 
@@ -909,13 +1147,17 @@ footer {
         color:rgb(210, 16, 9);
     }
 
+    #main_contents_background, #footerbackground {
+        /* display: none; */
+    }
+
     /* 모바일뷰 회사소개 스타일 시작 */
     
-    #sub_desc_1 li:first-child {
+    .main_desc li:first-child {
         font-size: 1.8em;
     }
 
-    #sub_desc_1 li:last-child {
+    .main_desc li:last-child {
         font-size: 0.7em;
     }
 
@@ -934,7 +1176,8 @@ footer {
     }
 
     #printer {
-        margin: 0 0 100px 50px;
+        padding: 0 0 100px 0px;
+        margin: 0;
     }
 
     #nav_route {
@@ -972,5 +1215,33 @@ footer {
         margin-left: -25px;
     }
 
+    #primary_customers > li {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 100px;
+    }
+
     /* 모바일뷰 회사소개 스타일 끝 */
+
+    #no_event {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    }
+
+    /* .article ul li {
+        font-size: 0.9em;
+    }
+
+    .article ul li:last-child {
+        font-size: 0.9em;
+    } */
 }
